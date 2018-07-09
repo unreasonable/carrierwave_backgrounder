@@ -2,7 +2,7 @@
 module CarrierWave
   module Workers
 
-    class ProcessAsset
+    class ProcessAsset < ActiveJob::Base
       include CarrierWave::Workers::ProcessAssetMixin
     end # ProcessAsset
 
